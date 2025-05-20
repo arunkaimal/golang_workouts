@@ -3,29 +3,27 @@ package main
 import "fmt"
 
 func main() {
-	day := 6
+	var num1 float64
+	var num2 float64
+	var operation string
 
-	switch day {
+	fmt.Print("Enter 1st number: ")
+	fmt.Scanln(&num1)
 
-	case 1:
-		fmt.Println("Monday")
-	case 2:
-		fmt.Println("Tuesday")
-	case 3:
-		fmt.Println("Wednesday")
-	default:
-		fmt.Println("Unknowm")
+	fmt.Println("Enter Operation (+,-,*,/):")
+	fmt.Scanln(&operation)
 
-	}
+	fmt.Print("Enter 2nd number: ")
+	fmt.Scanln(&num2)
 
-	grade := 70
-
-	switch {
-	case grade >= 90 && grade <= 100:
-		fmt.Println("Grade A")
-	case grade >= 80 && grade < 90:
-		fmt.Println("Grade B")
-	default:
-		fmt.Println("Fail")
+	switch operation {
+	case "+":
+		fmt.Println(num1 + num2)
+	case "-":
+		fmt.Println(num1 - num2)
+	case "*":
+		fmt.Println(num1 * num2)
+	case "/":
+		fmt.Println(num1 / num2)
 	}
 }

@@ -26,6 +26,5 @@ func main() {
 		}
 	}
 
-	fmt.Println("Even Numbers Are :", even)
-	fmt.Println("Odd Numbers Are :", odd)
+	fmt.Println("Even numbers are :", even, "and odd numbers are :", odd)
 }

@@ -6,9 +6,11 @@ import (
 	"os"
 )
 
-// type TodoTask struct {
-// 	name string
-// }
+type TodoTask struct {
+	name string
+}
+
+var todoList []TodoTask
 
 func main() {
 	fmt.Println("Welcome to ToDo List")
@@ -28,6 +30,13 @@ func main() {
 
 		name := scanner.Text()
 
-		fmt.Println(name)
+		todo := TodoTask{name}
+		todoList = append(todoList, todo)
+
+		fmt.Println(todoList)
+	}
+
+	for _, todo := range todoList {
+		fmt.Println(todo.name)
 	}
 }

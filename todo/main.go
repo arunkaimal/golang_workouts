@@ -6,9 +6,9 @@ import (
 	"os"
 )
 
-type TodoTask struct {
-	name string
-}
+// type TodoTask struct {
+// 	name string
+// }
 
 func main() {
 	fmt.Println("Welcome to ToDo List")
